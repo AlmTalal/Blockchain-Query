@@ -19,9 +19,10 @@ const main = async () => {
   //Picking the logs and putting them in an array
   const addresses = await contract.queryFilter("CreateBidder");
 
+  //console.log(addresses);
   for (let i = 0; i < addresses.length; i++) {
     //looping throw the logs and picking their addresses
-    let buyer = addresses[i].address;
+    let buyer = addresses[i].args;
     console.log(buyer);
   }
 };
