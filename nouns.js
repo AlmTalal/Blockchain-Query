@@ -9,6 +9,7 @@ const provider = new ethers.JsonRpcProvider(
 );
 
 const contractAddress = "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03";
+//Sorry, i had to add the contract abi, jump to line 700
 const contractAbi = [
   {
     inputs: [
